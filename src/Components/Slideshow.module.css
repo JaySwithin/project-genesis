@@ -1,0 +1,50 @@
+.body {
+  height: 100vh;
+  position: relative;
+}
+h1 {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+p {
+  margin-left: 1.5rem;
+  color: white;
+}
+
+button {
+  border: 1px solid black;
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+
+  padding: 0.65rem 1.25rem;
+}
+
+.description {
+  height: 220px;
+  width: 600px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  bottom: 120px;
+  left: 150px;
+}
+.left_chevron,
+.right_chevron {
+  height: 50px;
+  width: 50px;
+  color: white;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+}
+
+.left_chevron {
+  left: 50px;
+}
+
+.right_chevron {
+  right: 50px;
+}

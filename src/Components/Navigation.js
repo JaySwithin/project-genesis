@@ -1,30 +1,33 @@
 const Navigation = () => {
   return (
-    <header>
-      <nav className=" container flex flex-wrap justify-between items-center max-w-full border-b-2 border-b-neutral-200  h-14">
-        <div className="flex flex-wrap ">
-          {/* logo */}
-          <h3 className="text-2xl">SwithAiks</h3>
-        </div>
+    <header className="w-full h-14 border-b flex gap-8 ">
+      <div className="ml-20 ">
+        {/* logo */}
+        <h3 className="h-full pt-2 text-2xl text-center">SwithAiks</h3>
+      </div>
 
-        <ul className="flex flex-wrap justify-around basis-2/5 text-sm">
+      <nav className="w-full flex justify-between gap-4">
+        <ul className="flex w-2/4 justify-around items-center">
           <li>
-            <a>New</a>
+            <a href="#">New</a>
           </li>
+
           <li>
-            <a>Clothing</a>
+            <a href="#">Clothing</a>
           </li>
+
           <li>
-            <a>Brands</a>
+            <a href="#">Brands</a>
           </li>
+
           <li>
-            <a>About us</a>
+            <a href="#">About us</a>
           </li>
         </ul>
 
-        <ul className="flex flex-wrap justify-around basis-1/5  ml-auto ">
+        <ul className="flex w-1/5 justify-around items-center">
           <li>
-            <a>
+            <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -40,10 +43,10 @@ const Navigation = () => {
                 />
               </svg>
             </a>
-            {/* Search Icon */}
           </li>
+
           <li>
-            <a>
+            <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -59,10 +62,10 @@ const Navigation = () => {
                 />
               </svg>
             </a>
-            {/* Cart Icon */}
           </li>
+
           <li>
-            <a>
+            <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -77,8 +80,7 @@ const Navigation = () => {
                   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                 />
               </svg>
-            </a>{" "}
-            {/* User Icon */}
+            </a>
           </li>
         </ul>
       </nav>
