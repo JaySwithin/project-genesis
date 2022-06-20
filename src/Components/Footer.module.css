@@ -1,0 +1,44 @@
+.body {
+  background-color: rgba(165, 42, 42, 0.89);
+  color: white;
+
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+p {
+  color: rgb(199, 184, 184);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  color: rgb(199, 184, 184);
+}
+
+.brand {
+  margin-top: 0;
+}
+
+.newsletter {
+  width: 40%;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input {
+  width: 70%;
+  margin-left: 1.5rem;
+  background-color: transparent;
+  border-bottom: 1.5px solid grey;
+}
+
+.input:active {
+  /* Style the input so that there's no border when active */
+}
