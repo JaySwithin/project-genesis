@@ -1,6 +1,7 @@
 .body {
   height: 100vh;
   position: relative;
+  transition: all 0.5s ease-out;
 }
 h1 {
   margin-left: 1.5rem;
@@ -30,6 +31,7 @@ button {
   position: absolute;
   bottom: 120px;
   left: 150px;
+  transition: all 0.5s ease-out;
 }
 .left_chevron,
 .right_chevron {

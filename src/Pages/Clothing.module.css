@@ -1,0 +1,21 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  color: black;
+  font-size: 1.5rem;
+  width: 300px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-bottom: 3px solid grey;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+p {
+  display: inline-block;
+  color: grey;
+  margin-left: -12rem;
+}
