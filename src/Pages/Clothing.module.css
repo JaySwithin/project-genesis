@@ -8,6 +8,7 @@ h1 {
   font-size: 1.5rem;
   width: 300px;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: 2rem;
   border-bottom: 3px solid grey;
   padding-bottom: 1rem;
@@ -18,4 +19,116 @@ p {
   display: inline-block;
   color: grey;
   margin-left: -12rem;
+}
+
+.clothingGrid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1.5rem;
+}
+
+.graphicTees,
+.sidebags,
+.jeans,
+.sweaters,
+.sweatpants {
+  position: relative;
+}
+
+.graphicTees {
+  background-color: coral;
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.sidebags {
+  background-color: darkslategrey;
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.jeans {
+  background-color: lightslategray;
+  grid-row: span 2;
+}
+
+.sweatpants {
+  background-color: rgb(240, 148, 114);
+  grid-column: 3/5;
+  grid-row: 5/7;
+}
+
+.sweaters {
+  background-color: rgb(54, 100, 100);
+  grid-row: span 2;
+}
+
+.graphicTeesShopNow,
+.sidebagsShopNow,
+.jeansShopNow,
+.sweatersShopNow,
+.sweatpantsShopNow {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.graphicTeesShopNow {
+  height: 120px;
+  width: 400px;
+  top: 30%;
+  left: 10rem;
+}
+
+.sidebagsShopNow {
+  height: 120px;
+  width: 60%;
+  top: 60%;
+  left: 7rem;
+}
+
+.jeansShopNow,
+.sweatersShopNow {
+  height: 120px;
+  width: 60%;
+  top: 40%;
+  left: 4rem;
+}
+.sweatpantsShopNow {
+  height: 120px;
+  width: 60%;
+  top: 40%;
+  left: 7rem;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+h2,
+button {
+  margin-left: 2rem;
+}
+
+.sidebagsShopNow > button {
+  background-color: darkslategray;
+}
+.graphicTeesShopNow > button {
+  background-color: coral;
+}
+.jeansShopNow > button {
+  background-color: lightslategray;
+}
+.sweatersShopNow > button {
+  background-color: rgb(54, 100, 100);
+}
+.sweatpantsShopNow > button {
+  background-color: rgb(240, 148, 114);
 }
