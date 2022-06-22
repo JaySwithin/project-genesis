@@ -8,6 +8,29 @@ function Brands() {
       <h1>Brands :</h1> {/* svg */}
       <p>shop your favourite brands</p>
       {/* flex of brands */}
+      <ul className={styles.brands}>
+        <li>
+          <a href="##"></a>
+        </li>
+        <li>
+          <a href="##"></a>
+        </li>
+        <li>
+          <a href="##"></a>
+        </li>
+        <li>
+          <a href="##"></a>
+        </li>
+        <li>
+          <a href="##"></a>
+        </li>
+        <li>
+          <a href="##"></a>
+        </li>
+        <li>
+          <a href="##"></a>
+        </li>
+      </ul>
     </div>
   );
 }

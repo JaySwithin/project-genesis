@@ -28,8 +28,6 @@ function Slideshow() {
     setImage(SlideshowData[counter].image);
   }, [counter]);
 
-  console.log(counter);
-
   return (
     <div
       className={styles.body}

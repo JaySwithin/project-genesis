@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { FaInstagram, FaTwitter, FaFacebook, FaSnapchat } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
         {" "}
         <h1 className={styles.brand}>SwithAiks</h1>
         <div className={styles.newsletter_email}>
-          <p>
+          <p className={styles.newsletterParagraph}>
             Join the SwithAiks newsletter, be the first to know when there is
             new arrivals
           </p>
@@ -27,35 +28,74 @@ function Footer() {
         <div className={styles.about_us}>
           <h2>About Us</h2>
           <ul>
-            <li>Stores</li>
-            <li>Gift Cards</li>
-            <li>Shop Men</li>
-            <li>Shop Women</li>
+            <li>
+              <a href="#">Stores</a>
+            </li>
+            <li>
+              <a href="#">Gift Cards</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#">Shop Men</a>
+            </li>
+            <li>
+              <a href="#">Shop Women</a>
+            </li>
           </ul>
         </div>
         <div className={styles.customer}>
           <h2>Customer</h2>
           <ul>
-            <li>Worldwide Shipping</li>
-            <li>Terms Conditions</li>
-            <li>Privacy Policy</li>
-            <li>Payments</li>
-            <li>Returns Refunds</li>
-            <li>FAQs</li>
-            <li>Help Center</li>
+            <li>
+              <a href="#">Worldwide Shipping</a>
+            </li>
+            <li>
+              <a href="#">Terms &amp; Conditions</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Payments</a>
+            </li>
+            <li>
+              <a href="#">Returns &amp; Refunds</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Help Center</a>
+            </li>
           </ul>
         </div>
         <div className={styles.contact_us}>
           <h2>Contact Us</h2>
           <ul>
             <li>
-              <a>info@cloudwest.com</a>
+              <a href="#">info@swithaiks.com</a>
             </li>
             <li>Legon, Accra , Ghana</li>
             <li> +23355254093</li>
           </ul>
-          <div>{/* flex social icons */}</div>
-          <p> 2022, Cloudwest</p>
+          <div className={styles.socialIcons}>
+            {/* flex social icons */}
+            <a href="#">
+              <FaInstagram size="1.5em" />
+            </a>
+            <a href="#">
+              <FaTwitter size="1.5em" />
+            </a>
+            <a href="#">
+              <FaFacebook size="1.5em" />
+            </a>
+            <a href="#">
+              <FaSnapchat size="1.5em" />
+            </a>
+          </div>
+          <p className={styles.contactParagraph}> &copy; 2022, Cloudwest</p>
         </div>
       </div>
     </div>
