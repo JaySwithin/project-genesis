@@ -74,6 +74,7 @@ p {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
+  z-index: 999;
 }
 
 .graphicTeesShopNow {
@@ -95,7 +96,7 @@ p {
   height: 120px;
   width: 60%;
   top: 40%;
-  left: 4rem;
+  left: 1rem;
 }
 .sweatpantsShopNow {
   height: 120px;
@@ -131,4 +132,31 @@ button {
 }
 .sweatpantsShopNow > button {
   background-color: rgb(240, 148, 114);
+}
+
+.sidebagsImg {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.sweatersImg,
+.jeansImg,
+.sweatpantsImg,
+.graphicTeesImg {
+  position: absolute;
+  right: 2rem;
+
+  height: 100%;
+}
+
+.sidebagsImg > img,
+.sweatersImg > img,
+.jeansImg > img,
+.sweatpantsImg > img,
+.graphicTeesImg > img {
+  height: 100%;
+
+  mix-blend-mode: multiply;
 }

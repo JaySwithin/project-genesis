@@ -2,6 +2,12 @@ import React from "react";
 import Footer from "../Components/Footer";
 import Navigation from "../Components/Navigation";
 import styles from "./Clothing.module.css";
+import Sidebags from "../Images/Sidebags.jpg";
+import Sweaters from "../Images/sweaters.jpg";
+import Jeans from "../Images/Jeans.jpg";
+import Sweatpants from "../Images/Sweatpants.jpg";
+import GraphicTees from "../Images/Graphic-Tees.webp";
+import Brands from "../Components/Brands";
 
 function Clothing() {
   return (
@@ -17,7 +23,9 @@ function Clothing() {
             <button>Shop now</button>
           </div>
 
-          <div className={styles.graphicTeesImg}></div>
+          <div className={styles.graphicTeesImg}>
+            <img src={GraphicTees}></img>
+          </div>
         </div>
 
         <div className={styles.sidebags}>
@@ -26,7 +34,9 @@ function Clothing() {
             <button>Shop now</button>
           </div>
 
-          <div className={styles.sidebagsImg}></div>
+          <div className={styles.sidebagsImg}>
+            <img src={Sidebags}></img>
+          </div>
         </div>
 
         <div className={styles.sweatpants}>
@@ -35,7 +45,9 @@ function Clothing() {
             <button>Shop now</button>
           </div>
 
-          <div className={styles.sweatpantsImg}></div>
+          <div className={styles.sweatpantsImg}>
+            <img src={Sweatpants}></img>
+          </div>
         </div>
 
         <div className={styles.jeans}>
@@ -44,7 +56,9 @@ function Clothing() {
             <button>Shop now</button>
           </div>
 
-          <div className={styles.jeansImg}></div>
+          <div className={styles.jeansImg}>
+            <img src={Jeans}></img>
+          </div>
         </div>
 
         <div className={styles.sweaters}>
@@ -53,9 +67,12 @@ function Clothing() {
             <button>Shop now</button>
           </div>
 
-          <div className={styles.sweatersImg}></div>
+          <div className={styles.sweatersImg}>
+            <img src={Sweaters}></img>
+          </div>
         </div>
       </div>
+      <Brands />
       <Footer />
     </div>
   );

@@ -1,6 +1,5 @@
 .body {
   width: 100vw;
-  height: 100vh;
 }
 
 h1 {
@@ -18,4 +17,16 @@ p {
   display: inline-block;
   color: grey;
   margin-left: -13rem;
+}
+
+.brands {
+  margin: 2rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+li {
+  align-self: center;
 }
