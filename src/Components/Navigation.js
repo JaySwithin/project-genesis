@@ -1,13 +1,15 @@
 const Navigation = () => {
   return (
-    <header className="w-full h-14 border-b flex gap-8 ">
+    <header className="w-full h-14 border-b border-b-white flex gap-8  ">
       <div className="ml-20 ">
         {/* logo */}
-        <h3 className="h-full pt-2 text-2xl text-center">SwithAiks</h3>
+        <h3 className="text-white h-full pt-2 text-2xl text-center">
+          SwithAiks
+        </h3>
       </div>
 
       <nav className="w-full flex justify-between gap-4">
-        <ul className="flex w-2/4 justify-around items-center">
+        <ul className=" text-white flex w-2/4 justify-around items-center">
           <li>
             <a href="#">New</a>
           </li>
@@ -25,7 +27,7 @@ const Navigation = () => {
           </li>
         </ul>
 
-        <ul className="flex w-1/5 justify-around items-center">
+        <ul className=" text-white flex w-1/5 justify-around items-center">
           <li>
             <a href="#">
               <svg

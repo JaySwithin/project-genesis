@@ -11,8 +11,8 @@ import UrbanOutfitters from "../Brand Logos/Urban Outfitters.png";
 function Brands() {
   return (
     <div className={styles.body}>
-      <h1>Brands :</h1> {/* svg */}
-      <p>shop your favourite brands</p>
+      <h1 className={styles.h1}>Brands :</h1> {/* svg */}
+      <p className={styles.p}>shop your favourite brands</p>
       {/* flex of brands */}
       <ul className={styles.brands}>
         <li>

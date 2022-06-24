@@ -1,7 +1,6 @@
 .body {
   height: 100vh;
   position: relative;
-  transition: all 0.5s ease-out;
 }
 h1 {
   margin-left: 1.5rem;
@@ -16,22 +15,28 @@ p {
 }
 
 button {
-  border: 1px solid black;
+  border: 1px solid transparent;
   margin-top: 3rem;
   margin-left: 1.5rem;
-
   padding: 0.65rem 1.25rem;
 }
 
 .description {
   height: 220px;
   width: 600px;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   position: absolute;
   bottom: 120px;
   left: 150px;
-  transition: all 0.5s ease-out;
+}
+
+.pageNumber {
+  color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: (5px);
+  font-size: 22rem;
+  font-weight: 600;
+  width: max-content;
 }
 .left_chevron,
 .right_chevron {
@@ -39,7 +44,7 @@ button {
   width: 50px;
   color: white;
   position: absolute;
-  top: 40%;
+  top: 45%;
   cursor: pointer;
 }
 
@@ -49,4 +54,24 @@ button {
 
 .right_chevron {
   right: 50px;
+}
+
+.imageContainer {
+  position: absolute;
+  height: 90vh;
+  width: 40%;
+  bottom: 0;
+
+  right: 8rem;
+  background-color: inherit;
+}
+
+.imageContainer > img {
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.imageContainer > img:hover {
+  transition: all 0.5s ease-out;
+  transform: scale(1.05);
 }
