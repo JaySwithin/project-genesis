@@ -1,0 +1,53 @@
+.body {
+  background-color: rgba(73, 32, 32, 0.89);
+  color: white;
+
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.newsletterParagraph {
+  color: rgb(199, 184, 184);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.contactParagraph {
+  margin-left: 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  color: rgb(199, 184, 184);
+}
+
+.brand {
+  margin-top: 0;
+}
+
+.newsletter {
+  width: 40%;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input {
+  width: 70%;
+  margin-left: 1.5rem;
+  background-color: transparent;
+  border-bottom: 1.5px solid grey;
+}
+
+.socialIcons {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}

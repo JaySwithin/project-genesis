@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navigation from "../Components/Navigation";
 import SlideshowData from "../Images/SlideshowData";
 import styles from "./Slideshow.module.css";
+import CrossfadeImage from "react-crossfade-image";
 
 function Slideshow() {
   const [image, setImage] = useState([]);
@@ -18,9 +19,8 @@ function Slideshow() {
   const subtractCounterHandler = () => {
     if (counter === 0) {
       setCounter(SlideshowData?.length - 1);
-      setCounter((prevcounter) => prevcounter - 1);
     } else {
-      setCounter(SlideshowData?.length - 1);
+      setCounter((prevcounter) => prevcounter - 1);
     }
   };
 
@@ -34,10 +34,16 @@ function Slideshow() {
     <div
       className={styles.body}
       style={{
-        backgroundImage: `url(${image})`,
+        backgroundColor: `${SlideshowData[counter].background_color}`,
       }}
     >
       <Navigation></Navigation>
+      <div className={styles.pageNumber}>{`0${counter + 1}`}</div>
+
+      <div className={styles.imageContainer}>
+        <img src={image}></img>
+      </div>
+
       <svg
         onClick={subtractCounterHandler}
         className={`${styles.left_chevron} "h-6 w-6 `}
@@ -68,7 +74,13 @@ function Slideshow() {
       <div className={styles.description}>
         <h1>{SlideshowData[counter].heading}</h1>
         <p>{SlideshowData[counter].description}</p>
-        <button>Buy Now</button>
+        <button
+          style={{
+            backgroundColor: `${SlideshowData[counter].background_color}`,
+          }}
+        >
+          Buy Now
+        </button>
       </div>
     </div>
   );
