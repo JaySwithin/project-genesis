@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Navigation from "../Components/Navigation";
 import SlideshowData from "../Images/SlideshowData";
 import styles from "./Slideshow.module.css";
-import CrossfadeImage from "react-crossfade-image";
 
 function Slideshow() {
   const [image, setImage] = useState([]);

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Components/Footer";
 import Navigation from "../Components/Navigation";
 import Rows from "../Components/Rows";
 
@@ -11,7 +12,9 @@ function NewArrivals() {
 
       <h1>New Arrivals</h1>
 
-      <Rows />
+      <Rows search="new" />
+
+      <Footer />
     </div>
   );
 }
