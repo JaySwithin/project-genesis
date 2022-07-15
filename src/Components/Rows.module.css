@@ -11,6 +11,11 @@
   margin-bottom: 0.75rem;
   cursor: pointer;
 }
+
+.img:hover {
+  transition: all 0.5s ease-out;
+  transform: scale(1.1);
+}
 figure {
   position: relative;
 }
